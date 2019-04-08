@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { masterFirebaseConfig } from './api-keys';
 
 
 import { AppComponent } from './app.component';
