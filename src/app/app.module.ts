@@ -4,11 +4,13 @@ import { masterFirebaseConfig } from './api-keys';
 
 
 import { AppComponent } from './app.component';
+import { LandingComponent } from './landing/landing.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule
