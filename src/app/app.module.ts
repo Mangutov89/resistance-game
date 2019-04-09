@@ -12,6 +12,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { RoomGeneratorComponent } from './room-generator/room-generator.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,7 +27,8 @@ export const firebaseConfig = {
     LandingComponent,
     GameRoomComponent,
     AuthenticationComponent,
-    RoomGeneratorComponent
+    RoomGeneratorComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,

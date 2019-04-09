@@ -7,16 +7,21 @@ import { AuthenticationComponent } from './authentication/authentication.compone
 const appRoutes: Routes = [
   {
     path: '',
-    component: LandingComponent
+    redirectTo: '/welcome',
+    pathMatch: 'full'
   },
   {
     path: 'rooms/:id',
     component: GameRoomComponent
   },
   {
-    path: 'signIn',
-    component: AuthenticationComponent
+    path: 'welcome',
+    component: LandingComponent,
+    children: [
+      { path: "signIn", component: AuthenticationComponent},
+    ]
   }
+
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

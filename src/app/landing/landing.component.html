@@ -1,7 +1,8 @@
 <h1>Welcome</h1>
 <h3>Sign In / Register</h3>
 <div>
-  <button class="sign-in">Sign In</button>
-  <button class="sign-up">Sign Up</button>
+  <a [routerLink]="['signIn']" class="sign-in" (click)="showSignIn()">Sign In</a>
+  <button class="sign-up" (click)="showSignOut()">Sign Up</button>
   <app-room-generator></app-room-generator>
+  <router-outlet></router-outlet>
 </div>
