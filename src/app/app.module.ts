@@ -11,6 +11,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthenticationComponent } from './authentication/authentication.component';
+import { GoogleComponent } from './google/google.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -24,7 +25,8 @@ export const firebaseConfig = {
     AppComponent,
     LandingComponent,
     GameRoomComponent,
-    AuthenticationComponent
+    AuthenticationComponent,
+    GoogleComponent
   ],
   imports: [
     BrowserModule,

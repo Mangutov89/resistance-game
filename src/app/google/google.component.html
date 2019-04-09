@@ -1,0 +1,10 @@
+<div class="navbar-brand" routerLink="">
+  Login with Google
+  <div *ngIf="isLoggedIn">
+    <a>{{userName}}</a>
+    <a (click)="logout()">Log out</a>
+  </div>
+  <div *ngIf ="!isLoggedIn">
+    <a (click)="login()">Log in</a>
+  </div>
+</div>
