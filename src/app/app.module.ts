@@ -12,6 +12,7 @@ import { LandingComponent } from './landing/landing.component';
 import { routing } from './app.routing';
 import { GameRoomComponent } from './game-room/game-room.component';
 import { AngularFireModule } from 'angularfire2';
+
 import { AngularFireDatabaseModule, FirebaseListObservable } from 'angularfire2/database';
 import { ChatFormComponent } from './chat-form/chat-form.component';
 import { ChatroomComponent } from './chatroom/chatroom.component';
@@ -19,10 +20,13 @@ import { FeedComponent } from './feed/feed.component';
 import { MessageComponent } from './message/message.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserItemComponent } from './user-item/user-item.component';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AuthenticationComponent } from './authentication/authentication.component';
 
 import { ChatService } from './services/chat.service';
 
 import { appRoutes } from '../routes';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -41,7 +45,8 @@ export const firebaseConfig = {
     FeedComponent,
     MessageComponent,
     UserListComponent,
-    UserItemComponent
+    UserItemComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +55,8 @@ export const firebaseConfig = {
     HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [ChatService],
   bootstrap: [AppComponent]

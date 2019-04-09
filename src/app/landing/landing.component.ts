@@ -19,7 +19,8 @@ export class LandingComponent implements OnInit {
 
   generateRoom(chat){
     var newGame: Game = new Game(chat);
-    this.roomService.newGame(newGame);
+    var roomId = this.roomService.newGame(newGame);
+    this.router.navigate(['rooms', roomId])
   }
 
 }
