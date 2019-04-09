@@ -22,6 +22,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserItemComponent } from './user-item/user-item.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthenticationComponent } from './authentication/authentication.component';
+import { GoogleComponent } from './google/google.component';
 
 import { ChatService } from './services/chat.service';
 
@@ -40,6 +41,7 @@ export const firebaseConfig = {
     AppComponent,
     LandingComponent,
     GameRoomComponent,
+    GoogleComponent,
     ChatFormComponent,
     ChatroomComponent,
     FeedComponent,
