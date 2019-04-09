@@ -11,13 +11,26 @@ export class AuthenticationService {
     this.user = afAuth.authState;
   }
 
-  login() {
-    this.afAuth.auth.signInAnonymously();
+  login(username) {
+    this.afAuth.auth.signInAnonymously().then(() => {
+      this.afAuth.auth.currentUser.updateProfile({displayName: username});
+    });
   }
 
   logout() {
     this.afAuth.auth.signOut();
   }
+
+  setNickname() {
+    var user = firebase.auth().currentUser;
+
+    console.log(user)
+  //   user.updateProfile({}).then(function() {
+  //     // Update successful.
+  //   }).catch(function(error) {
+  //   // An error happened.
+  // });
+}
 
 }
 

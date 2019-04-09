@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthenticationService } from "./../authentication.service";
+import { AngularFireAuth } from 'angularfire2/auth';
+import * as firebase from 'firebase/app';
 
 @Component({
   selector: 'app-authentication',
@@ -19,17 +21,28 @@ export class AuthenticationComponent {
         this.isLoggedIn = false;
       } else {
         this.isLoggedIn = true;
+        this.userName = user.displayName;
       }
     });
   }
-sdf
-  login() {
-    this.authService.login();
-    console.log(`logged in ${user} login status : ${this.isLoggedIn}`)
+
+  login(username) {
+    if(username.length > 0) {
+      this.authService.login(username);
+    }
+
   }
 
   logout() {
     this.authService.logout();
+  }
+
+  ngDoCheck() {
+    this.user = firebase.auth().currentUser;
+    if(this.user !== null) {
+      this.userName = this.user.displayName;
+    }
+
   }
 
 }
