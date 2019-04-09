@@ -13,7 +13,7 @@ export class AuthenticationService {
 
   login(username) {
     this.afAuth.auth.signInAnonymously().then(() => {
-      this.afAuth.auth.currentUser.updateProfile({displayName: username});
+      this.afAuth.auth.currentUser.updateProfile({displayName: username, photoURL: null});
     });
   }
 

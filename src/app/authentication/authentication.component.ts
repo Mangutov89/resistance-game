@@ -12,6 +12,7 @@ import * as firebase from 'firebase/app';
 export class AuthenticationComponent {
 
   user;
+  userName;
 
   private isLoggedIn: Boolean;
 
@@ -30,7 +31,6 @@ export class AuthenticationComponent {
     if(username.length > 0) {
       this.authService.login(username);
     }
-
   }
 
   logout() {
