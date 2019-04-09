@@ -1,3 +1,81 @@
+# _Resistance Board Game_
+
+#### _JavaScript Team Week Project, 04.9.19_
+
+#### By _**Leo Mangutov, Riley Benson, Randee Layosa, and Joe Pritchett**_
+
+## Description
+
+_This is a online version of the game Resistance, it's a game that requires 5 players. The game's premise involves a war between government and resistance groups, and players are assigned various roles related to these groups. Like other deductive reasoning party games, The Resistance relies on certain players attempting to disrupt the larger group working together, while the rest of the players work to reveal the spy working against them._
+
+## Specification
+
+## Setup/Installation Requirements
+
+* _Clone this repository `git clone https://github.com/joepritch/resistance-game.git`_
+* _Enter root directory_
+* _Run the command: `$ npm install` in terminal_
+* __
+
+## Known Bugs
+
+## Support and contact details
+
+_If you have any questions contact us at:_
+_<a href="mailto:leo.mangutov@gmail.com">Leo Mangutov</a>_
+
+## Technologies Used
+
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _Atom_
+* _JavaScript_
+* _jQuery_
+* _NPM_
+* _Webpack_
+* _jasmine_
+* _Karma_
+* _Angular_
+* _Firebase_
+
+### License
+
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+* The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright (c) 2019 **_Leo Mangutov_**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Resistance
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
