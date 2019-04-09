@@ -9,6 +9,8 @@ import { routing } from './app.routing';
 import { GameRoomComponent } from './game-room/game-room.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AuthenticationComponent } from './authentication/authentication.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -21,7 +23,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     LandingComponent,
-    GameRoomComponent
+    GameRoomComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ export const firebaseConfig = {
     HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
