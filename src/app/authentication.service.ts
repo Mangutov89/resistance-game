@@ -20,23 +20,4 @@ export class AuthenticationService {
   logout() {
     this.afAuth.auth.signOut();
   }
-
-  setNickname() {
-    var user = firebase.auth().currentUser;
-
-    console.log(user)
-  //   user.updateProfile({}).then(function() {
-  //     // Update successful.
-  //   }).catch(function(error) {
-  //   // An error happened.
-  // });
 }
-
-}
-
-// firebase.auth().signInAnonymously().catch(function(error) {
-//   // Handle Errors here.
-//   var errorCode = error.code;
-//   var errorMessage = error.message;
-//   // ...
-// });
