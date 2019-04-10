@@ -5,6 +5,7 @@ import { GameRoomComponent } from './game-room/game-room.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { ChatroomComponent } from './chatroom/chatroom.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { PlayComponent } from './play/play.component';
 
 const appRoutes: Routes = [
   {
@@ -27,6 +28,10 @@ const appRoutes: Routes = [
   {
     path: 'chat',
     component: ChatroomComponent
+  },
+  {
+    path: 'play',
+    component: PlayComponent
   }
 ];
 
