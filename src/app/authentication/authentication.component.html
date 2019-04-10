@@ -1,9 +1,11 @@
-<div *ngIf="isLoggedIn">
-  <a>{{userName}}</a>
-  <button (click)="logout()">Log out</button>
-</div>
+<div>
+  <div *ngIf="isLoggedIn">
+    <a>{{userName}}</a>
+    <button (click)="logout()">Log out</button>
+  </div>
 
-<div *ngIf ="!isLoggedIn">
-  <input #newUser type="text" placeholder="Enter a Display Name">
-  <button (click)="login(newUser.value)">Log in</button>
+  <div *ngIf ="!isLoggedIn">
+    <input #newUser type="text" placeholder="Enter a Display Name">
+    <button (click)="login(newUser.value)">Log in</button>
+  </div>
 </div>
