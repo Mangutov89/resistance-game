@@ -1,7 +1,8 @@
 import { Component, OnInit, OnChanges } from '@angular/core';
 import { ChatService } from '../services/chat.service';
 import { Observable } from 'rxjs/Observable';
-// auth import
+import { AuthenticationService } from '../authentication.service'
+
 import { ChatMessage } from '../models/chat-message.model';
 import { FirebaseListObservable } from 'angularfire2/database';
 

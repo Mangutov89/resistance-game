@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ChatService } from '../services/chat.service';
-// auth import
+import { AuthenticationService } from '../authentication.service';
 import { ChatMessage } from '../models/chat-message.model';
 
 @Component({
@@ -11,7 +11,6 @@ import { ChatMessage } from '../models/chat-message.model';
 export class MessageComponent implements OnInit {
 
   @Input() chatMessage: ChatMessage;
-  userEmail: string;
   userName: string;
   messageContent: string;
   timeStamp: Date = new Date();
@@ -22,7 +21,6 @@ export class MessageComponent implements OnInit {
   ngOnInit(chatMessage = this.chatMessage) {
       this.messageContent = chatMessage.message;
       this.timeStamp = chatMessage.timeSent;
-      this.userEmail = chatMessage.email;
       this.userName = chatMessage.userName;
   }
 }

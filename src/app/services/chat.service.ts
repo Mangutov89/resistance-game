@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabaseModule, FirebaseListObservable } from 'angularfire2/database';
-// angular fire atuh ?????
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { AngularFireAuth } from 'angularfire2/auth';
 import { Observable } from 'rxjs/Observable';
-// auth service import from ???
+import { AuthenticationService } from '../authentication.service';
+
 import * as firebase from 'firebase/app';
 
 
@@ -17,8 +18,8 @@ export class ChatService {
   userName: Observable<string>;
 
   constructor(
-    private db: AngularFireDatabaseModule,
-    // private afAuth: // authentication
+    private db: AngularFireDatabase,
+    private afAuth: AngularFireAuth
   ) {
     this.afAuth.authState.subscribe(auth => {
       if (auth !== undefined && auth !== null) {
@@ -29,13 +30,12 @@ export class ChatService {
 
   sendMessage(msg: string) {
     const timestamp = this.getTimeStamp();
-    const email = this.user.email;
     this.chatMessages = this.getMessages();
     this.chatMessages.push({
       message: msg,
       timeSent: timestamp,
-      userName: this.userName,
-      email: email });
+      userName: this.afAuth.auth.currentUser.displayName,
+     });
   }
 
   getMessages(): FirebaseListObservable<ChatMessage[]> {

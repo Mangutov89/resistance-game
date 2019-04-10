@@ -9,40 +9,35 @@ import * as firebase from 'firebase/app';
   styleUrls: ['./authentication.component.scss'],
   providers: [AuthenticationService]
 })
+
 export class AuthenticationComponent {
 
-  user;
-  userName;
-
-  private isLoggedIn: Boolean;
+  private loginMethod: String | null = null;
 
   constructor(public authService: AuthenticationService) {
-    this.authService.user.subscribe((user) => {
-      if (user == null) {
-        this.isLoggedIn = false;
-      } else {
-        this.isLoggedIn = true;
-        this.userName = user.displayName;
-      }
-    });
-  }
-
-  login(username) {
-    if(username.length > 0) {
-      this.authService.login(username);
-    }
-  }
-
-  logout() {
-    this.authService.logout();
-  }
-
-  ngDoCheck() {
-    this.user = firebase.auth().currentUser;
-    if(this.user !== null) {
-      this.userName = this.user.displayName;
-    }
 
   }
+
+  showSignIn() {
+    this.loginMethod = 'signIn';
+  }
+
+  showSignUp() {
+    this.loginMethod = 'signUp';
+  }
+
+  back() {
+    this.loginMethod = null;
+  }
+
+  // logout() {
+  //   this.authService.logout();
+  // }
+  //
+  // ngDoCheck() {
+  //   this.user = firebase.auth().currentUser;
+  //   if(this.user !== null) {
+  //     this.userName = this.user.displayName;
+  //   }
 
 }

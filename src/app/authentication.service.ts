@@ -11,7 +11,7 @@ export class AuthenticationService {
     this.user = afAuth.authState;
   }
 
-  login(username) {
+  loginAnon(username) {
     this.afAuth.auth.signInAnonymously().then(() => {
       this.afAuth.auth.currentUser.updateProfile({displayName: username, photoURL: null});
     });
@@ -22,19 +22,7 @@ export class AuthenticationService {
   }
 }
 
-export class GoogleAuthService {
-  user: Observable<firebase.User>;
-
-  constructor(public afAuth: AngularFireAuth) {
-    this.user = afAuth.authState;
-  }
-
-  login() {
+  loginWithGoogle() {
     this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }
-
-  logout() {
-    this.afAuth.auth.signOut();
-  }
-
 }

@@ -1,11 +1,10 @@
-<div>
-  <div *ngIf="isLoggedIn">
-    <a>{{userName}}</a>
-    <button (click)="logout()">Log out</button>
-  </div>
+<div *ngIf="loginMethod === null">
+  <button class="sign-in" (click)="showSignIn()">Sign In</button>
+  <button class="sign-up" (click)="showSignUp()">Sign Up</button>
+</div>
 
-  <div *ngIf ="!isLoggedIn">
-    <input #newUser type="text" placeholder="Enter a Display Name">
-    <button (click)="login(newUser.value)">Log in</button>
-  </div>
+<div *ngIf="loginMethod !== null">
+  <button (click)="back()">back</button>
+  <app-sign-in *ngIf="loginMethod === 'signIn'"></app-sign-in>
+  <app-sign-up *ngIf="loginMethod === 'signUp'"></app-sign-up>
 </div>
