@@ -30,13 +30,12 @@ export class ChatService {
 
   sendMessage(msg: string) {
     const timestamp = this.getTimeStamp();
-    const email = this.user.email;
     this.chatMessages = this.getMessages();
     this.chatMessages.push({
       message: msg,
       timeSent: timestamp,
-      userName: this.userName,
-      email: email });
+      userName: this.afAuth.auth.currentUser.displayName,
+     });
   }
 
   getMessages(): FirebaseListObservable<ChatMessage[]> {
