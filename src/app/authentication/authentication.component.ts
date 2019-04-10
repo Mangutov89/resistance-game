@@ -30,14 +30,4 @@ export class AuthenticationComponent {
     this.loginMethod = null;
   }
 
-  // logout() {
-  //   this.authService.logout();
-  // }
-  //
-  // ngDoCheck() {
-  //   this.user = firebase.auth().currentUser;
-  //   if(this.user !== null) {
-  //     this.userName = this.user.displayName;
-  //   }
-
 }

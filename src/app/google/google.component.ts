@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GoogleService }  from "./../google.service";
+import { AuthenticationService } from "./../authentication.service";
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
 
@@ -7,17 +7,15 @@ import * as firebase from 'firebase/app';
   selector: 'app-google',
   templateUrl: './google.component.html',
   styleUrls: ['./google.component.scss'],
-  providers: [GoogleService]
+  providers: [AuthenticationService]
 })
 
 export class GoogleComponent implements OnInit {
+  isLoggedIn;
+  userName;
 
-  user;
-  private isLoggedIn: Boolean;
-  private userName: String;
-
-  constructor(public googleService: GoogleService) {
-    this.googleService.user.subscribe(user => {
+  constructor(public authService: AuthenticationService) {
+    this.authService.user.subscribe(user => {
       if(user == null) {
         this.isLoggedIn = false;
       } else {
@@ -28,11 +26,11 @@ export class GoogleComponent implements OnInit {
   }
 
   login() {
-    this.googleService.login();
+    this.authService.loginWithGoogle();
   }
 
   logout() {
-    this.googleService.logout();
+    this.authService.logout();
   }
 
   ngOnInit() {
