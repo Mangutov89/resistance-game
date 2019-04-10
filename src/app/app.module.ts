@@ -29,7 +29,9 @@ import { MessageComponent } from './message/message.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserItemComponent } from './user-item/user-item.component';
 
-import { ChatService } from './services/chat.service'
+import { ChatService } from './services/chat.service';
+import { AuthOptionsComponent } from './auth-options/auth-options.component';
+import { SignUpComponent } from './sign-up/sign-up.component'
 
 
 
@@ -54,7 +56,9 @@ export const firebaseConfig = {
     UserItemComponent,
     AuthenticationComponent,
     RoomGeneratorComponent,
-    SignInComponent
+    SignInComponent,
+    AuthOptionsComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
