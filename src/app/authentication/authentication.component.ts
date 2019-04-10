@@ -9,12 +9,14 @@ import * as firebase from 'firebase/app';
   styleUrls: ['./authentication.component.css'],
   providers: [AuthenticationService]
 })
+
 export class AuthenticationComponent {
 
   user;
   userName;
 
   private isLoggedIn: Boolean;
+  private loginMethod: String | null = null;
 
   constructor(public authService: AuthenticationService) {
     this.authService.user.subscribe((user) => {
@@ -25,6 +27,18 @@ export class AuthenticationComponent {
         this.userName = user.displayName;
       }
     });
+  }
+
+  showSignIn() {
+    this.loginMethod = 'signIn';
+  }
+
+  showSignUp() {
+    this.loginMethod = 'signUp';
+  }
+
+  back() {
+    this.loginMethod = null;
   }
 
   login(username) {

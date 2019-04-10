@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ChatService } from '../services/chat.service';
-// auth import
+import { AuthenticationService } from '../authentication.service';
 import { ChatMessage } from '../models/chat-message.model';
 
 @Component({

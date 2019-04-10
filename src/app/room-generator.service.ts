@@ -12,7 +12,7 @@ export class RoomGeneratorService {
 
   newGame(newRoom: Game){
     var roomId = this.rooms.push(newRoom).key;
-    return roomId
+    return roomId;
   }
 
   getRoomById(roomId){

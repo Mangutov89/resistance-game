@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabaseModule, FirebaseListObservable } from 'angularfire2/database';
-// angular fire atuh ?????
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { AngularFireAuth } from 'angularfire2/auth';
 import { Observable } from 'rxjs/Observable';
-// auth service import from ???
+import { AuthenticationService } from '../authentication.service';
+
 import * as firebase from 'firebase/app';
 
 
@@ -17,8 +18,8 @@ export class ChatService {
   userName: Observable<string>;
 
   constructor(
-    private db: AngularFireDatabaseModule,
-    // private afAuth: // authentication
+    private db: AngularFireDatabase,
+    private afAuth: AngularFireAuth
   ) {
     this.afAuth.authState.subscribe(auth => {
       if (auth !== undefined && auth !== null) {
