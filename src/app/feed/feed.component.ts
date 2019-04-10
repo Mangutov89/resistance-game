@@ -13,7 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class FeedComponent implements OnInit, OnChanges {
   feed: FirebaseListObservable<ChatMessage[]>;
 
-  constructor(private: chat: ChatService) { }
+  constructor(private chat: ChatService) { }
 
   ngOnInit() {
     this.feed = this.chat.getMessages();

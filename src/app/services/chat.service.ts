@@ -18,7 +18,7 @@ export class ChatService {
 
   constructor(
     private db: AngularFireDatabaseModule,
-    private afAuth: // authentication
+    // private afAuth: // authentication
   ) {
     this.afAuth.authState.subscribe(auth => {
       if (auth !== undefined && auth !== null) {
