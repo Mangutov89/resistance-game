@@ -8,7 +8,7 @@ import { RoomGeneratorService } from '../room-generator.service'
 @Component({
   selector: 'app-game-room',
   templateUrl: './game-room.component.html',
-  styleUrls: ['./game-room.component.css'],
+  styleUrls: ['./game-room.component.scss'],
   providers: [ RoomGeneratorService ]
 })
 export class GameRoomComponent implements OnInit {

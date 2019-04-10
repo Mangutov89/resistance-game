@@ -9,7 +9,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 @Component({
   selector: 'app-feed',
   templateUrl: './feed.component.html',
-  styleUrls: ['./feed.component.css']
+  styleUrls: ['./feed.component.scss']
 })
 export class FeedComponent implements OnInit, OnChanges {
   feed: FirebaseListObservable<ChatMessage[]>;
