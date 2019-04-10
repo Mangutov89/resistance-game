@@ -1,3 +1,8 @@
 <h1>Welcome</h1>
-<button (click)="generateRoom('hello')" class="btn btn-danger">Generate a new room</button>
-<app-authentication></app-authentication>
+<h3>Sign In / Register</h3>
+<div>
+  <a [routerLink]="['signIn']" class="sign-in" (click)="showSignIn()">Sign In</a>
+  <button class="sign-up" (click)="showSignOut()">Sign Up</button>
+  <app-room-generator></app-room-generator>
+  <router-outlet></router-outlet>
+</div>

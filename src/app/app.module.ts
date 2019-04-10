@@ -23,9 +23,6 @@ import { UserItemComponent } from './user-item/user-item.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthenticationComponent } from './authentication/authentication.component';
 
-import { ChatService } from './services/chat.service';
-
-import { appRoutes } from '../routes';
 
 
 export const firebaseConfig = {
@@ -40,13 +37,16 @@ export const firebaseConfig = {
     AppComponent,
     LandingComponent,
     GameRoomComponent,
+    GoogleComponent,
     ChatFormComponent,
     ChatroomComponent,
     FeedComponent,
     MessageComponent,
     UserListComponent,
     UserItemComponent,
-    AuthenticationComponent
+    AuthenticationComponent,
+    RoomGeneratorComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
