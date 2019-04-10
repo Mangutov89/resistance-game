@@ -30,6 +30,8 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserItemComponent } from './user-item/user-item.component';
 
 import { ChatService } from './services/chat.service'
+import { GoogleService } from './google.service'
+import { AuthenticationService } from './authentication.service'
 
 
 
@@ -65,7 +67,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [ChatService],
+  providers: [GoogleService, AuthenticationService, ChatService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
