@@ -9,6 +9,7 @@ import * as firebase from 'firebase/app';
   styleUrls: ['./authentication.component.css'],
   providers: [AuthenticationService]
 })
+
 export class AuthenticationComponent {
 
   user;
