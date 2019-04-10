@@ -1,3 +1,10 @@
-<h1>Welcome</h1>
+<button (click)="signOut()">Sign Out</button>
 
-<app-authentication></app-authentication>
+<div *ngIf="!isLoggedIn">
+  <h1>Welcome Please Sign In To Continue</h1>
+  <app-sign-in-anon ></app-sign-in-anon>
+</div>
+
+<div *ngIf="isLoggedIn">
+  <app-room-generator></app-room-generator>
+</div>
