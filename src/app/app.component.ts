@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Game } from './models/game.model';
+import { Room } from './models/room.model';
 
 @Component({
   selector: 'app-root',

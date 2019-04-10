@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Game } from './models/game.model'
+import { Room } from './models/room.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -10,7 +10,7 @@ export class RoomGeneratorService {
     this.rooms = database.list('rooms')
   }
 
-  newGame(newRoom: Game){
+  newGame(newRoom: Room){
     var roomId = this.rooms.push(newRoom).key;
     return roomId;
   }

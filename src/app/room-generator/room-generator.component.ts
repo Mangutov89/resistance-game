@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RoomGeneratorService } from '../room-generator.service';
 import { Router } from '@angular/router';
-import { Game } from '../models/game.model';
+import { Room } from '../models/room.model';
 
 @Component({
   selector: 'app-room-generator',
@@ -17,9 +17,9 @@ export class RoomGeneratorComponent implements OnInit {
   ngOnInit() {
   }
 
-  generateRoom(chat){
-    var newGame: Game = new Game(chat);
-    var roomId = this.roomService.newGame(newGame);
+  generateRoom(){
+    var newRoom: Room = new Room();
+    var roomId = this.roomService.newGame(newRoom);
     this.router.navigate(['rooms', roomId])
   }
 
