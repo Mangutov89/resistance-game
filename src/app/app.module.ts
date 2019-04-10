@@ -34,6 +34,11 @@ import { GoogleService } from './google.service'
 import { AuthenticationService } from './authentication.service'
 
 
+import { AuthOptionsComponent } from './auth-options/auth-options.component';
+import { SignUpComponent } from './sign-up/sign-up.component'
+
+
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -56,7 +61,9 @@ export const firebaseConfig = {
     UserItemComponent,
     AuthenticationComponent,
     RoomGeneratorComponent,
-    SignInComponent
+    SignInComponent,
+    AuthOptionsComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

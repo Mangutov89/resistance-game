@@ -4,6 +4,7 @@ import { LandingComponent } from './landing/landing.component';
 import { GameRoomComponent } from './game-room/game-room.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { ChatroomComponent } from './chatroom/chatroom.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 const appRoutes: Routes = [
   {
@@ -18,6 +19,10 @@ const appRoutes: Routes = [
   {
     path: 'welcome',
     component: LandingComponent,
+  },
+  {
+    path: 'signIn',
+    component: SignInComponent
   },
   {
     path: 'chat',
