@@ -21,23 +21,3 @@ export class AuthenticationService {
     this.afAuth.auth.signOut();
   }
 }
-<<<<<<< HEAD
-=======
-
-export class GoogleAuthService {
-  user: Observable<firebase.User>;
-
-  constructor(public afAuth: AngularFireAuth) {
-    this.user = afAuth.authState;
-  }
-
-  login() {
-    this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
-  }
-
-  logout() {
-    this.afAuth.auth.signOut();
-  }
-
-}
->>>>>>> master
