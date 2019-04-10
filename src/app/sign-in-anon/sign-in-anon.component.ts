@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from "./../authentication.service";
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
@@ -19,7 +19,7 @@ export class SignInAnonComponent implements OnInit {
 
   login(username) {
     if(username.length > 0) {
-      this.authService.login(username);
+      this.authService.loginAnon(username);
     }
   }
 
