@@ -6,7 +6,7 @@ import * as firebase from 'firebase/app';
 @Component({
   selector: 'app-google',
   templateUrl: './google.component.html',
-  styleUrls: ['./google.component.css'],
+  styleUrls: ['./google.component.scss'],
   providers: [GoogleService]
 })
 

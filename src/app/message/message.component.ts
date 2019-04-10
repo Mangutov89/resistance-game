@@ -6,7 +6,7 @@ import { ChatMessage } from '../models/chat-message.model';
 @Component({
   selector: 'app-message',
   templateUrl: './message.component.html',
-  styleUrls: ['./message.component.css']
+  styleUrls: ['./message.component.scss']
 })
 export class MessageComponent implements OnInit {
 

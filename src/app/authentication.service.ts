@@ -21,8 +21,6 @@ export class AuthenticationService {
     this.afAuth.auth.signOut();
   }
 }
-<<<<<<< HEAD
-=======
 
 export class GoogleAuthService {
   user: Observable<firebase.User>;
@@ -40,4 +38,3 @@ export class GoogleAuthService {
   }
 
 }
->>>>>>> master

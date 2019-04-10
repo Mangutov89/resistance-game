@@ -6,7 +6,7 @@ import { Game } from '../models/game.model';
 @Component({
   selector: 'app-room-generator',
   templateUrl: './room-generator.component.html',
-  styleUrls: ['./room-generator.component.css'],
+  styleUrls: ['./room-generator.component.scss'],
   providers: [ RoomGeneratorService ]
 })
 

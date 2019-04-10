@@ -10,7 +10,7 @@ const appRoutes: Routes = [
     path: '',
     redirectTo: '/welcome',
     pathMatch: 'full'
-  }
+  },
   {
     path: 'rooms/:id',
     component: GameRoomComponent
