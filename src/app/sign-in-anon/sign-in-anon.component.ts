@@ -22,6 +22,7 @@ export class SignInAnonComponent implements OnInit {
   login(username) {
     if(username.length > 0) {
       this.authService.loginAnon(username)
+
     }
   }
 

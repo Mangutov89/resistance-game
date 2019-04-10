@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import { Router } from '@angular/router';
 import { AngularFireAuth } from 'angularfire2/auth';
+import { Observable } from 'rxjs/Observable';
 import * as firebase from 'firebase/app';
 
 @Injectable()
@@ -12,7 +13,7 @@ export class AuthenticationService {
   }
 
   loginAnon(username) {
-    this.afAuth.auth.signInAnonymously().then(() => {
+    return this.afAuth.auth.signInAnonymously().then(() => {
       this.afAuth.auth.currentUser.updateProfile({displayName: username, photoURL: null});
     });
   }
