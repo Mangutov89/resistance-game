@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35vw;
+}
+button {
+  width: 20vw;
+}
+input {
+  width: 30vw;
+  text-align: center;
+}

@@ -5,7 +5,7 @@
   </div>
 
   <div *ngIf="loginMethod !== null">
-    <button (click)="back()">back</button>
+      <button id="back" (click)="back()">back</button>
     <app-sign-in *ngIf="loginMethod === 'signIn'"></app-sign-in>
     <app-sign-up *ngIf="loginMethod === 'signUp'"></app-sign-up>
   </div>

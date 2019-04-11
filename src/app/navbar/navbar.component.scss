@@ -1,9 +1,24 @@
 .header {
-  background-color: red;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  background-image: linear-gradient(gray,red);
+
+  height: 15vw;
+}
+.faq {
+  background-image: url('../../assets/images/faq.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 3vw;
+  width: 3vw;
   position: fixed;
-  top: 0;
+  top: 5px;
+  right: 5px;
+}
+.logo {
+  background-image: url('../../assets/images/logo3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 15vw;
+  width: 100%;;
 }
