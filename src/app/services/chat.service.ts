@@ -39,6 +39,7 @@ export class ChatService {
      });
   }
 
+
   getMessages(roomId:string): FirebaseListObservable<ChatMessage[]> {
     // query to create our message feed binding
     return this.db.list('messages', {
@@ -52,9 +53,9 @@ export class ChatService {
 
   getTimeStamp() {
     const now = new Date();
-    const date = now.getUTCFullYear() + '/' +
-                 (now.getUTCMonth() + 1) + '/' +
-                 now.getUTCDate();
+    const date = (now.getUTCMonth() + 1) + '/' +
+                 now.getUTCDate() + '/' +
+                 now.getUTCFullYear();
     const time = now.getUTCHours() + ':' +
                  now.getUTCMinutes() + ':' +
                  now.getUTCSeconds();

@@ -5,6 +5,15 @@
   height: 100%;
   width: 100%;
 }
+button {
+  width: 20vw;
+  margin-top: 5px;
+}
+input {
+  width: 20vw;
+  text-align: center;
+}
+
 .square {
   background-color: #696969;
   width: 50vw;
@@ -16,6 +25,7 @@
   justify-content: center;
   align-items: center;
 }
+
 button {
   width: 20vw;
   min-width: 250px;
