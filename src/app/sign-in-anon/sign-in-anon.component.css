@@ -6,8 +6,9 @@
 }
 button {
   width: 20vw;
+  margin-top: 5px;
 }
 input {
-  width: 30vw;
+  width: 20vw;
   text-align: center;
 }

@@ -14,6 +14,10 @@ import * as firebase from 'firebase/app';
 
 export class SignInAnonComponent implements OnInit {
 
+  searchValue:string = '';
+  clearSearch() {
+    this.searchValue = ' ';
+  }
   constructor(public authService: AuthenticationService, private router: Router) { }
 
   ngOnInit() {
@@ -27,3 +31,5 @@ export class SignInAnonComponent implements OnInit {
   }
 
 }
+// export class SignInAnonComponent {
+// }

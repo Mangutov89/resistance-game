@@ -1,4 +1,4 @@
 <div class="container">
-  <input #nickName type="text" placeholder="Enter Your Nickname">
-  <button (click)="login(nickName.value)">Sign with Nickname</button>
+  <input (click)="clearSearch()" type="text" placeholder="Enter Your Nickname" [value]="searchValue">
+  <button (click)="login(nickName.value)">Sign in with Nickname</button>
 </div>
