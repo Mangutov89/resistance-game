@@ -5,6 +5,15 @@
   height: 100%;
   width: 100%;
 }
+button {
+  width: 20vw;
+  margin-top: 5px;
+}
+input {
+  width: 20vw;
+  text-align: center;
+}
+
 .square {
   background-color: #696969;
   position: fixed;
@@ -18,16 +27,4 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-button {
-  width: 20vw;
-  margin-top: 5px;
-}
-input {
-  width: 20vw;
-  text-align: center;
-}
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
 }
