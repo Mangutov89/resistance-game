@@ -7,21 +7,22 @@
   align-items: center;
 }
 .faq {
-  background-image: url('../../assets/images/faq.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
   height: 3vw;
   width: 3vw;
-  position: fixed;
+  position: absolute;
   top: 5px;
   right: 5px;
 }
 .logo {
-  background-image: url('../../assets/images/logo3.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  max-height: 100%;
+}
+.faq>img {
   width: 100%;
+}
+.logo>img {
+  width: 60%;
 }
