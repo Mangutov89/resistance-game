@@ -1,11 +1,16 @@
+<app-navbar></app-navbar>
 <div class="container">
-  <app-navbar></app-navbar>
-  <button (click)="signOut()">Sign Out</button>
+  <div class="left">
+    <img src="../../assets/images/spy1.png" alt="">
+  </div>
   <div *ngIf="!isLoggedIn">
-    <h1>Welcome Please Sign In To Continue</h1>
     <app-sign-in-anon ></app-sign-in-anon>
   </div>
   <div *ngIf="isLoggedIn">
+    <button (click)="signOut()">Sign Out</button><br>
     <app-room-generator></app-room-generator>
+  </div>
+  <div class="right">
+    <img src="../../assets/images/innocent1.png" alt="">
   </div>
 </div>
