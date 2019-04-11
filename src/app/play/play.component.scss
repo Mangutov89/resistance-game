@@ -1,0 +1,246 @@
+.game-area-container{
+  background-color: rgb(72, 72, 72);
+  width: 100vw;
+  height: 89vh;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.game-area{
+  grid-row: 1 / 6;
+  grid-column: 1 / 9;
+
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.player2{
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  img{
+    width: 80%;
+    border: 3px solid white;
+    border-radius: 7px;
+    box-shadow: 0 0 8px 1px #000000;
+  }
+}
+.player2-icon{
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  img{
+    max-width: 90px;
+    width: 80%;
+    height: auto;
+  }
+  .user-gun{
+    box-shadow: 0 0 8px 1px #000000;
+    border-radius: 7px;
+  }
+}
+
+.player3{
+  grid-row: 2 / 3;
+  grid-column: 6 / 7;
+  img{
+    width: 80%;
+    border: 3px solid white;
+    border-radius: 7px;
+    box-shadow: 0 0 8px 1px #000000;
+
+  }
+}
+.player3-icon{
+  grid-row: 2 / 3;
+  grid-column: 7 / 8;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  img{
+    max-width: 90px;
+    width: 80%;
+    height: auto;
+  }
+}
+
+.player4{
+  grid-row: 2 / 3;
+  grid-column: 10 / 11;
+  img{
+    width: 80%;
+    border: 3px solid white;
+    border-radius: 7px;
+    box-shadow: 0 0 8px 1px #000000;
+  }
+}
+.player4-icon{
+  grid-row: 2 / 3;
+  grid-column: 11 / 12;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  img{
+    max-width: 90px;
+    width: 80%;
+    height: auto;
+  }
+}
+
+.player5{
+  grid-row: 6 / 7;
+  grid-column: 2 / 3;
+  img{
+    width: 80%;
+    border: 3px solid white;
+    border-radius: 7px;
+    box-shadow: 0 0 8px 1px #000000;
+  }
+}
+.player5-icon{
+  grid-row: 6 / 7;
+  grid-column: 3 / 4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  img{
+    max-width: 90px;
+    width: 80%;
+    height: auto;
+  }
+}
+
+.game-board{
+  grid-row: 3 / 6;
+  grid-column: 3 / 9;
+  display: flex;
+  justify-content: center;
+
+  .board{
+    img{
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
+      box-shadow: 0px 0px 15px 5px #000;
+      max-width: 1200px;
+      max-height: 879px;
+      width: auto;
+      height: 100%;
+    }
+    .mission-round{
+      grid-row: 2 / 3;
+      grid-column: 0 / 1;
+      max-width: 100px;
+      width: 100%;
+    }
+  }
+}
+
+.user-player{
+  position: absolute;
+  bottom: 0;
+  z-index: 997;
+  max-width: 250px;
+  min-width: 150px;
+  width: 15%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  .leader-coin{
+    position: absolute;
+    right: -32px;
+    z-index: 2;
+    top: -32px;
+    max-width: 80px;
+    width: 100%;
+    height: auto;
+  }
+  .player1{
+    position: relative;
+    z-index: 1;
+    border: 8px solid white;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .user-gun{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 8px 1px #000000;
+    border-radius: 7px;
+  }
+}
+
+.game-pieces{
+  grid-row: 6/ 7;
+  grid-column: 2/ 9;
+  box-shadow: inset 0 0 20px 5px #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .vote{
+    width: (70%/2);
+    max-width: 400px;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3%;
+    img{
+      width: 25%;
+      margin: 0 3%;
+      box-shadow: 0 0 8px 1px #000000;
+      border-radius: 7px;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .mission{
+    width: (100%/2);
+    max-width: 600px;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 3%;
+    img{
+      width: 40%;
+      margin: 0 3%;
+      border: 3px solid white;
+      border-radius: 7px;
+      box-shadow: 0 0 8px 1px #000000;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.chatFormWrapper {
+  grid-row: 6/9;
+  grid-column: 9/11;
+}
+
+.chat{
+  grid-row: 1/ 6;
+  grid-column: 9/ 11;
+  box-shadow: inset 0 0 20px 5px #000000;
+  overflow-y: scroll;
+}
