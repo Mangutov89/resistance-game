@@ -11,6 +11,7 @@
   height: 50px;
   width: 50px;
 }
+
 .right {
   position: absolute;
   right: 5vw;
@@ -18,12 +19,30 @@
   height: 50px;
   width: 50px;
 }
+
 img {
   width: 100%;
 }
+
 button {
   width: 20vw;
 }
+
+.square {
+  background-color: #696969;
+  position: fixed;
+  top: 30vh;
+  right: 25vw;
+  width: 50vw;
+  height: 40vh;
+  box-shadow: inset 0 0 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   text-align: center;
 }
