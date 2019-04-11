@@ -43,9 +43,9 @@ export class ChatService {
     // query to create our message feed binding
     return this.db.list('messages', {
       query: {
-
+        equalTo: roomId,
         limitToLast: 25,
-        orderByKey: true
+        orderByChild: "roomId"
       }
     })
   }
