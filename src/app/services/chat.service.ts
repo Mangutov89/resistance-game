@@ -30,7 +30,7 @@ export class ChatService {
 
   sendMessage(msg: string, roomId: string) {
     const timestamp = this.getTimeStamp();
-    this.chatMessages = this.getMessages();
+    this.chatMessages = this.getMessages(roomId);
     this.chatMessages.push({
       message: msg,
       timeSent: timestamp,
@@ -39,10 +39,11 @@ export class ChatService {
      });
   }
 
-  getMessages(): FirebaseListObservable<ChatMessage[]> {
+  getMessages(roomId:string): FirebaseListObservable<ChatMessage[]> {
     // query to create our message feed binding
     return this.db.list('messages', {
       query: {
+
         limitToLast: 25,
         orderByKey: true
       }

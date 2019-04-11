@@ -15,6 +15,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class FeedComponent implements OnInit, OnChanges {
   feed: FirebaseListObservable<ChatMessage[]>;
+  roomId: string;
 
   constructor(
     private chat: ChatService,
@@ -26,7 +27,7 @@ export class FeedComponent implements OnInit, OnChanges {
     this.route.params.forEach((urlParameters) => {
       this.roomId = urlParameters['id'];
     });
-    this.feed = this.chat.getMessages();
+    this.feed = this.chat.getMessages(this.roomId);
   }
 
   ngOnChanges() {
