@@ -43,6 +43,7 @@ export class ChatService {
     // query to create our message feed binding
     return this.db.list('messages', {
       query: {
+
         limitToLast: 25,
         orderByKey: true
       }
