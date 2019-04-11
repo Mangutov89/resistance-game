@@ -1,2 +1,8 @@
-<h2>This room has the id: {{roomId}}</h2>
-<p>{{(roomToDisplay | async)?.chat}}</p>
+<app-navbar></app-navbar>
+<div *ngIf="isLoggedIn">
+  <app-chatroom></app-chatroom>
+</div>
+
+<div *ngIf="!isLoggedIn">
+  <app-sign-in-anon></app-sign-in-anon>
+</div>

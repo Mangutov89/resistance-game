@@ -1,0 +1,29 @@
+.chatInput{
+    flex: 10;
+    font-size: 1.3em;
+    background-color: #eee;
+    color: #000;
+    transition: 0.1s ease-out;
+    padding-left: 80px;
+}
+
+.chatInput:focus{
+    background-color: lightblue;
+    color: #222;
+    transition: 0.2s ease-in;
+}
+
+.chatButton{
+    flex: 1;
+    padding: 10px;
+    padding: 2px 14px;
+    font-size: 1.3em;
+    background-color: #444;
+    color: black;
+    transition: 0.2s ease-out;
+    min-width: 50px;
+}
+
+.chatButton:hover{
+    background-color: red;
+}

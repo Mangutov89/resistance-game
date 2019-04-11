@@ -32,12 +32,15 @@ import { UserItemComponent } from './user-item/user-item.component';
 import { ChatService } from './services/chat.service'
 import { GoogleService } from './google.service'
 import { AuthenticationService } from './authentication.service'
-
+import { RoomGeneratorService } from './room-generator.service'
 
 import { AuthOptionsComponent } from './auth-options/auth-options.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInAnonComponent } from './sign-in-anon/sign-in-anon.component';
+
 import { PlayComponent } from './play/play.component'
+import { NavbarComponent } from './navbar/navbar.component'
+
 
 
 
@@ -68,6 +71,8 @@ export const firebaseConfig = {
     SignUpComponent,
     SignInAnonComponent,
     PlayComponent
+    NavbarComponent
+
   ],
   imports: [
     BrowserModule,
@@ -78,7 +83,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [GoogleService, AuthenticationService, ChatService],
+  providers: [GoogleService, AuthenticationService, ChatService, RoomGeneratorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

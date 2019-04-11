@@ -1,0 +1,28 @@
+.header {
+  background-image: linear-gradient(gray,red);
+  height: 15vh;
+  max-height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faq {
+  height: 3vw;
+  width: 3vw;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  max-height: 100%;
+}
+.faq>img {
+  width: 100%;
+}
+.logo>img {
+  width: 60%;
+}

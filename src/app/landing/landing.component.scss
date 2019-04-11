@@ -1,0 +1,29 @@
+.container {
+  background-color: gray;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left {
+  position: absolute;
+  left: 5vw;
+  top: 30vh;
+  height: 50px;
+  width: 50px;
+}
+.right {
+  position: absolute;
+  right: 5vw;
+  top: 30vh;
+  height: 50px;
+  width: 50px;
+}
+img {
+  width: 100%;
+}
+button {
+  width: 20vw;
+}
+h1 {
+  text-align: center;
+}
