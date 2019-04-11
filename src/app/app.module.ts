@@ -70,7 +70,7 @@ export const firebaseConfig = {
     AuthOptionsComponent,
     SignUpComponent,
     SignInAnonComponent,
-    PlayComponent
+    PlayComponent,
     NavbarComponent
 
   ],
