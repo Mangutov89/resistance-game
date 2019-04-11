@@ -23,4 +23,14 @@ export class GameRoomComponent implements OnInit {
     });
     this.roomToDisplay = this.roomService.getRoomById(this.roomId);
   }
+
+  addMessage() {
+    console.log(this.roomToDisplay.messages)
+    this.roomToDisplay.messages.push({
+      message: "here sure is a message",
+      timeSent: "Time",
+      userName: "Frank Le-Berry",
+      roomId: this.roomId
+     })
+  }
 }

@@ -28,13 +28,14 @@ export class ChatService {
     });
    }
 
-  sendMessage(msg: string) {
+  sendMessage(msg: string, roomId: string) {
     const timestamp = this.getTimeStamp();
     this.chatMessages = this.getMessages();
     this.chatMessages.push({
       message: msg,
       timeSent: timestamp,
       userName: this.afAuth.auth.currentUser.displayName,
+      roomId: roomId
      });
   }
 

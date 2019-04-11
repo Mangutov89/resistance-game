@@ -16,7 +16,7 @@ export class RoomGeneratorService {
   }
 
   getRoomById(roomId){
-    return this.database.object('rooms/' + roomId)
+    return this.database.object('rooms/' + roomId);
   }
 
 }
