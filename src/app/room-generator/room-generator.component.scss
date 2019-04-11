@@ -4,3 +4,13 @@ button {
   text-align: center;
   padding: 7px;
 }
+.square {
+  background-color: #696969;
+  height: 40vh;
+  box-shadow: inset 0 0 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
