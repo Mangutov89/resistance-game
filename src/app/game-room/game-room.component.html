@@ -1,3 +1,5 @@
 <h2>This room has the id: {{roomId}}</h2>
 <p>{{(roomToDisplay | async)?.chat}}</p>
+<button (click)="addMessage()">CLICKME TO ADD A MESSAGE</button>
+<li ngFor="let message of roomToDisplay.messages">{{message}}</li>
 <app-chatroom></app-chatroom>
