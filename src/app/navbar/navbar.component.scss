@@ -1,0 +1,27 @@
+.header {
+  background-image: linear-gradient(gray,red);
+  height: 15vh;
+  max-height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faq {
+  background-image: url('../../assets/images/faq.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 3vw;
+  width: 3vw;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+}
+.logo {
+  background-image: url('../../assets/images/logo3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}

@@ -8,12 +8,16 @@ import * as firebase from 'firebase/app';
 @Component({
   selector: 'app-sign-in-anon',
   templateUrl: './sign-in-anon.component.html',
-  styleUrls: ['./sign-in-anon.component.css'],
+  styleUrls: ['./sign-in-anon.component.scss'],
   providers: [AuthenticationService]
 })
 
 export class SignInAnonComponent implements OnInit {
 
+  searchValue:string = '';
+  clearSearch() {
+    this.searchValue = ' ';
+  }
   constructor(public authService: AuthenticationService, private router: Router) { }
 
   ngOnInit() {
@@ -27,3 +31,5 @@ export class SignInAnonComponent implements OnInit {
   }
 
 }
+// export class SignInAnonComponent {
+// }

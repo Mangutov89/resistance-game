@@ -1,5 +1,17 @@
-.auth-wrapper {
-  height: 100vh;
-  width: 100vw;
-  background-color: skyblue;
+.container {
+  width: 30vw;
+  position: fixed;
+  top: 43vh;
+  right: 35vw;
+  display: flex;
+  justify-content: center;
+  font-family: ethnocentric;
+}
+button {
+  width: 20vw;
+}
+#back {
+  position: fixed;
+  top: 39vh;
+  right: 40vw;
 }
