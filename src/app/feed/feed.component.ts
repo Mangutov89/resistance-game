@@ -33,5 +33,4 @@ export class FeedComponent implements OnInit, OnChanges {
   ngOnChanges() {
     this.feed = this.chat.getMessages(this.roomId);
   }
-
 }
