@@ -28,22 +28,24 @@ export class ChatService {
     });
    }
 
-  sendMessage(msg: string) {
+  sendMessage(msg: string, roomId: string) {
     const timestamp = this.getTimeStamp();
-    this.chatMessages = this.getMessages();
+    this.chatMessages = this.getMessages(roomId);
     this.chatMessages.push({
       message: msg,
       timeSent: timestamp,
       userName: this.afAuth.auth.currentUser.displayName,
+      roomId: roomId
      });
   }
 
-  getMessages(): FirebaseListObservable<ChatMessage[]> {
+  getMessages(roomId:string): FirebaseListObservable<ChatMessage[]> {
     // query to create our message feed binding
     return this.db.list('messages', {
       query: {
+        equalTo: roomId,
         limitToLast: 25,
-        orderByKey: true
+        orderByChild: "roomId"
       }
     })
   }

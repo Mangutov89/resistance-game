@@ -26,7 +26,7 @@ export class SignInAnonComponent implements OnInit {
   login(username) {
     if(username.length > 0) {
       this.authService.loginAnon(username)
-      .then(resolve => this.router.navigate(['/chat']));
+
     }
   }
 

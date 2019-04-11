@@ -1,7 +1,11 @@
-<body>
+<div class="container">
   <app-navbar></app-navbar>
-  <div class="square">
-    <app-authentication></app-authentication>
+  <button (click)="signOut()">Sign Out</button>
+  <div *ngIf="!isLoggedIn">
+    <h1>Welcome Please Sign In To Continue</h1>
+    <app-sign-in-anon ></app-sign-in-anon>
   </div>
-
-</body>
+  <div *ngIf="isLoggedIn">
+    <app-room-generator></app-room-generator>
+  </div>
+</div>
