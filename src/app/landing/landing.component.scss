@@ -1,23 +1,23 @@
 .container {
+  padding-bottom: 16vh;
   background-color: gray;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .left {
-  position: absolute;
-  left: 5vw;
-  top: 30vh;
-  height: 50px;
-  width: 50px;
+  top: 25vh;
+  width: 20vw;
 }
 
 .right {
-  position: absolute;
-  right: 5vw;
-  top: 30vh;
-  height: 50px;
-  width: 50px;
+
+  top: 25vh;
+  width: 20vw;
 }
 
 img {
