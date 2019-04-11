@@ -1,2 +1,4 @@
-<input #nickName type="text" placeholder="please enter a nickname">
-<button (click)="login(nickName.value)">Sign with Nickname</button>
+<div class="container">
+  <input (click)="clearSearch()" type="text" placeholder="Enter Your Nickname" [value]="searchValue">
+  <button (click)="login(nickName.value)">Sign in with Nickname</button>
+</div>

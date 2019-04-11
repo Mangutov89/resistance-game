@@ -36,7 +36,8 @@ import { RoomGeneratorService } from './room-generator.service'
 
 import { AuthOptionsComponent } from './auth-options/auth-options.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-import { SignInAnonComponent } from './sign-in-anon/sign-in-anon.component'
+import { SignInAnonComponent } from './sign-in-anon/sign-in-anon.component';
+import { NavbarComponent } from './navbar/navbar.component'
 
 
 
@@ -65,7 +66,8 @@ export const firebaseConfig = {
     SignInComponent,
     AuthOptionsComponent,
     SignUpComponent,
-    SignInAnonComponent
+    SignInAnonComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

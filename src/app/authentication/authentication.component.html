@@ -1,10 +1,12 @@
-<div *ngIf="loginMethod === null">
-  <button class="sign-in" (click)="showSignIn()">Sign In</button>
-  <button class="sign-up" (click)="showSignUp()">Sign Up</button>
-</div>
+<div class="container">
+  <div *ngIf="loginMethod === null">
+    <button class="sign-in" (click)="showSignIn()">Sign In</button><br><br>
+    <!-- <button class="sign-up" (click)="showSignUp()">Sign Up</button> -->
+  </div>
 
-<div *ngIf="loginMethod !== null">
-  <button (click)="back()">back</button>
-  <app-sign-in *ngIf="loginMethod === 'signIn'"></app-sign-in>
-  <app-sign-up *ngIf="loginMethod === 'signUp'"></app-sign-up>
+  <div *ngIf="loginMethod !== null">
+      <button id="back" (click)="back()">back</button>
+    <app-sign-in *ngIf="loginMethod === 'signIn'"></app-sign-in>
+    <!-- <app-sign-up *ngIf="loginMethod === 'signUp'"></app-sign-up> -->
+  </div>
 </div>
