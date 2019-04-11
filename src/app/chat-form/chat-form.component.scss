@@ -1,29 +1,36 @@
-.chatInput{
-    flex: 10;
-    font-size: 1.3em;
+.chatFormWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatInput {
+    font-size: 1em;
+    padding: .5em 3px;
     background-color: #eee;
     color: #000;
     transition: 0.1s ease-out;
-    padding-left: 80px;
+    width: 100%;
+    margin-bottom: 1em;
 }
 
-.chatInput:focus{
+.chatInput:focus {
     background-color: lightblue;
     color: #222;
     transition: 0.2s ease-in;
 }
 
-.chatButton{
-    flex: 1;
+.chatButton {
     padding: 10px;
     padding: 2px 14px;
     font-size: 1.3em;
-    background-color: #444;
+    background-color: red;
     color: black;
     transition: 0.2s ease-out;
     min-width: 50px;
 }
 
-.chatButton:hover{
-    background-color: red;
+.chatButton:hover {
+    background-color: #ff7f7f;
 }

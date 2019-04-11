@@ -1,7 +1,6 @@
 .header {
   background-image: linear-gradient(gray,red);
-  height: 15vh;
-  max-height: 125px;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,4 +24,9 @@
 }
 .logo>img {
   width: 60%;
+}
+
+.signOut div:hover {
+  cursor: pointer;
+  color: white;
 }

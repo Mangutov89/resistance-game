@@ -1,8 +1,9 @@
 <div class="header">
-  <div class="faq">
-    <img src="../../assets/images/faq.png" alt="">
-  </div>
   <div class="logo">
     <img src="../../assets/images/logo3.png" alt="">
+  </div>
+
+  <div *ngIf="isLoggedIn" class="signOut">
+    <div (click)="signOut()">Sign Out</div>
   </div>
 </div>
