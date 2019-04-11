@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @font-face {
-  font-family: ethnocentric;
+  font-family: 'ethnocentric';
   src: url('./assets/ethnocentric.ttf') format('truetype');
 }
-*{
+
+* {
   font-family: ethnocentric;
 }
