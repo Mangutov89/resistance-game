@@ -1,12 +1,18 @@
-# _Resistance Board Game_
+# The Resistance Board Game
 
 #### _JavaScript Team Week Project, 04.9.19_
 
-#### By _**Leo Mangutov, Riley Benson, Randee Layosa, and Joe Pritchett**_
+#### By: _**Leo Mangutov, Ward Chamberlain, Riley Benson, Randee Layosa, and Joe Pritchett**_
 
 ## Description
 
-_This is a online version of the game Resistance, it's a game that requires 5 players. The game's premise involves a war between government and resistance groups, and players are assigned various roles related to these groups. Like other deductive reasoning party games, The Resistance relies on certain players attempting to disrupt the larger group working together, while the rest of the players work to reveal the spy working against them._
+_This is an online version of the game The Resistance. The game's premise involves a war between government and resistance groups in which players are assigned various roles related to said groups. Like other deductive reasoning party games, The Resistance relies on certain players attempting to disrupt the larger group working together, while the rest of the players work to reveal the spy working against them. This game requires a minimum of 5 players and a maximum of 10._
+
+## Preview
+<p align="center">Game Room</p>
+<p align="center">
+<img src="src/assets/img/rebuild1.png" width="200" height="152" title="rebuild site">
+</p>
 
 ## Specification
 
