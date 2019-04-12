@@ -1,28 +1,78 @@
-# _Resistance Board Game_
+# The Resistance Board Game
 
 #### _JavaScript Team Week Project, 04.9.19_
 
-#### By _**Leo Mangutov, Riley Benson, Randee Layosa, and Joe Pritchett**_
+#### By: _**Leo Mangutov, Ward Chamberlain, Riley Benson, Randee Layosa, and Joe Pritchett**_
 
 ## Description
 
-_This is a online version of the game Resistance, it's a game that requires 5 players. The game's premise involves a war between government and resistance groups, and players are assigned various roles related to these groups. Like other deductive reasoning party games, The Resistance relies on certain players attempting to disrupt the larger group working together, while the rest of the players work to reveal the spy working against them._
+_This is an online version of the game The Resistance. The game's premise involves a war between government and resistance groups in which players are assigned various roles related to said groups. Like other deductive reasoning party games, The Resistance relies on certain players attempting to disrupt the larger group working together, while the rest of the players work to reveal the spy working against them. This game requires a minimum of 5 players and a maximum of 10._
 
-## Specification
+## Preview
+<p align="center">Login Landing Page | Private Game Room</p>
+<p align="center">
+<img src="src/assets/images/screenshot-login.png" width="500" height="263" title="Login landing page">
+<img src="src/assets/images/screenshot-gameroom.png" width="500" height="263" title="Private game room">
+</p>
 
 ## Setup/Installation Requirements
+_This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5._
 
-* _Clone this repository `git clone https://github.com/joepritch/resistance-game.git`_
-* _Enter root directory_
-* _Run the command: `$ npm install` in terminal_
-* __
+1. Clone this GitHub repository https://github.com/joepritch/resistance-game.git to your Desktop.
+  * Install git onto your computer if it isn't already.
+  * To clone the project down to your desktop, open your Terminal, and enter the following commands:
+  ```
+  cd desktop
+  git clone [paste link here]
+  cd desktop/[project folder name]
+  atom .
+  npm install
+  ```
+  * _You can use another text editor if Atom is not your preferred program._
+  * _Make sure a "node_modules" and "dist" folder are created in your project file. If it hasn't, run `npm install` again._
+  * _You can then go to the link in step 1 above, or continue on to the following instructions to run the server._
 
-## Known Bugs
+#### Running the server to view the live project
+* Run `ng serve` in the project directory in Terminal. Go to http://localhost:4200/ in the browser of your choice. _Note: The app will automatically reload if you change any of the source files._
 
-## Support and contact details
+#### Further help
 
-_If you have any questions contact us at:_
-_<a href="mailto:leo.mangutov@gmail.com">Leo Mangutov</a>_
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Planning and Specifications
+
+  | Configuration/Dependencies | Use |
+| :-------------     | :------------- |
+| Angular | framework |
+| Clean-Webpack-Plugin | clears project dist folder |
+| CSS-Loader, Style-Loader, Sass-Loader, Node-Sass | styling |
+| ESLint | JavaScript linter, checks code for errors |
+| File-Loader | image loader |
+| HTML-Webpack-Plugin | loads HTML file |
+| Jasmine, Karma | for testing code |
+| Typescript | programming language |
+| UglifyJS-Webpack-Plugin | minifies code |
+| Webpack | bundles/compiles code |
+
+**Sketch Wireframes**
+
+<p align="center">
+<img src="src/assets/images/sketch-gameroom1.png" width="500" height="356" title="Login landing page">
+<img src="src/assets/images/sketch-gameroom2.png" width="500" height="356" title="Private game room">
+</p>
+
+**Features Built and To Be Completed**
+- [x] Navigation bar component
+- [x] Game Room component with live/private chat
+- [x] Chat component
+- [x] Anonymous authentication
+- [x] Game Room generator upon login
+- [x] Link share capability for multiple players in same room
+- [x] Database stores User ID and Game Room ID
+- [ ] Game aspect is functioning and playable
+- [ ] Sass animations on game pieces
+- [ ] Game is able to handle 5-10 players
+- [ ] Expiration on game room to delete when a game is completed
 
 ## Technologies Used
 
@@ -34,10 +84,16 @@ _<a href="mailto:leo.mangutov@gmail.com">Leo Mangutov</a>_
 * _jQuery_
 * _NPM_
 * _Webpack_
-* _jasmine_
+* _Jasmine_
 * _Karma_
 * _Angular_
 * _Firebase_
+
+## Support and contact details
+
+_If you have any questions contact us at:_
+_<a href="mailto:leo.mangutov@gmail.com">Leo Mangutov</a>_
+
 
 ### License
 
@@ -59,47 +115,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Copyright (c) 2019 **_Leo Mangutov_**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Resistance
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) 2019 **_Leo Mangutov, Ward Chamberlain, Riley Benson, Randee Layosa, and Joe Pritchett_**
